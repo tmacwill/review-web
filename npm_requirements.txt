@@ -1,0 +1,12 @@
+babel-preset-react
+babelify
+browserify
+browserify-css
+jquery
+jshashes
+msgpack-js
+radio
+react
+react-dom
+sassify
+uglifyify
