@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var md5 = require('blueimp-md5');
 
 var API = '/api';
 var TOKEN_KEY = 'token';
@@ -9,6 +10,10 @@ var get = exports.get = function(url, data, callback) {
     }
 
     return request(url, data, 'GET', callback);
+};
+
+exports.hash = function(data) {
+    return md5(data);
 };
 
 var post = exports.post = function(url, data, callback) {

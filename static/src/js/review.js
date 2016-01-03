@@ -1,5 +1,4 @@
 var React = require('react');
-var Hash = require('jshashes');
 var lib = require('./lib');
 
 exports.Container = React.createClass({
@@ -10,7 +9,7 @@ exports.Container = React.createClass({
             var files = [];
             for (var i = 0; i < response.submission.files.length; i++) {
                 var file = response.submission.files[i];
-                var hash = new Hash.MD5().hex(file.title + file.content);
+                var hash = lib.hash(file.title + file.content);
                 files.push({
                     hash: hash,
                     title: file.title,

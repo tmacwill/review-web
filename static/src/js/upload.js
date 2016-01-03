@@ -1,6 +1,5 @@
 var React = require('react');
 var radio = require('radio');
-var Hash = require('jshashes');
 var $ = require('jquery');
 var _ = require('underscore');
 
@@ -47,7 +46,7 @@ exports.Container = React.createClass({
         radio('FileAdded').subscribe(function(title, content) {
             // don't add the same file twice
             var files = self.state.files;
-            var hash = new Hash.MD5().hex(title + content);
+            var hash = lib.hash(title + content);
             for (var i = 0; i < files.length; i++) {
                 if (files[i].hash == hash) {
                     return;
@@ -173,6 +172,8 @@ var PasteFileContainer = React.createClass({
 
     hide: function() {
         $(this.refs.container).addClass('hidden');
+        $(this.refs.title).val('');
+        $(this.refs.content).val('');
     },
 
     show: function() {

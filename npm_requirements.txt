@@ -1,12 +1,9 @@
 babel-preset-react
 babelify
+blueimp-md5
 browserify
-browserify-css
 jquery
-jshashes
-msgpack-js
 radio
 react
 react-dom
-sassify
-uglifyify
+uglify-js

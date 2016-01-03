@@ -1,0 +1,59 @@
+@import 'lib/bootstrap.min.scss';
+
+body {
+    background: #ecf0f1;
+}
+
+a:active, a:hover, a:visited, a:before, a:after, a:focus {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #167F39;
+    font-weight: 100;
+    font-size: 48px;
+}
+
+h2 {
+    color: #167F39;
+    font-weight: 200;
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.hidden {
+    display: none;
+}
+
+.content-area {
+    background: white;
+}
+
+.content-area.content-area-border {
+    border: 1px solid;
+    border-color: #e5e5e5 #dbdbdb #d2d2d2;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    padding: 20px;
+}
+
+::-webkit-input-placeholder {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+:-moz-input-placeholder {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+::-moz-input-placeholder {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}

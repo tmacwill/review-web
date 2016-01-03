@@ -11,6 +11,8 @@ class Resource(kata.resource.Resource):
 <html>
     <head>
         <title>%s</title>
+        <script type="text/javascript" src="/static/build/js/lib.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/build/css/lib.css"></script>
         %s
     </head>
     <body>
@@ -58,4 +60,5 @@ class Upload(Resource):
     def head(self, *args, **kwargs):
         return '''
 <script type="text/javascript" src="/static/build/js/upload.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/build/css/upload.css"></script>
         '''
