@@ -14,6 +14,7 @@ js_build = os.path.dirname(os.path.realpath(__file__)) + '/../static/build/js'
 # modules to be included on all pages
 js_include = [
     'blueimp-md5',
+    'bootstrap',
     'jquery',
     'radio',
     'react',

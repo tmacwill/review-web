@@ -1,0 +1,99 @@
+.btn {
+    font-size: 20px;
+    padding: 12px;
+    font-weight: 300;
+}
+
+input {
+    padding: 7px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    font-weight: 300;
+}
+
+.controls {
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-add-file a, .btn-paste-file a, .btn-upload a {
+        width: 100%;
+    }
+
+    .container-buttons {
+        .glyphicon {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .glyphicon-upload {
+            vertical-align: -2px;
+        }
+    }
+}
+
+.container-paste-file {
+    margin-top: 15px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    input, textarea {
+        padding: 7px;
+        width: 100%;
+        display: block;
+    }
+
+    input {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    textarea {
+        height: 300px;
+        font-family: monospace;
+    }
+}
+
+.container-files {
+    margin-top: 30px;
+
+    h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .row-file {
+        border-top: 1px solid #ccc;
+        margin: 0 15px;
+        padding: 15px 5px;
+        font-size: 18px;
+        font-weight: 300;
+
+        .title, .remove {
+            display: inline-block;
+        }
+
+        .remove {
+            vertical-align: -2px;
+            color: #A00909;
+        }
+
+        .remove:hover {
+            color: #B93C3C;
+        }
+
+        .title {
+            margin-left: 10px;
+        }
+    }
+
+    .row:last-child .row-file {
+        border-bottom: 1px solid #ccc;
+    }
+}

@@ -7,3 +7,4 @@ radio
 react
 react-dom
 uglify-js
+underscore

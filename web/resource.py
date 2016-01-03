@@ -10,6 +10,9 @@ class Resource(kata.resource.Resource):
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>%s</title>
         <script type="text/javascript" src="/static/build/js/lib.js"></script>
         <link rel="stylesheet" type="text/css" href="/static/build/css/lib.css"></script>
@@ -33,7 +36,7 @@ class Resource(kata.resource.Resource):
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
         </script>
-        <div id="container">
+        <div id="container" class="container">
             %s
         </div>
     </body>
